@@ -1,6 +1,6 @@
 ## Knapsack Algorithm
 
-knapsack_algorithm is a Python package offering a streamlined and effective resolution for the 0/1 knapsack problem.
+knapsack_algorithm is a Python package that provides a simple and efficient solution for the 0/1 knapsack problem.
 
 ### Features
 
