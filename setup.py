@@ -13,7 +13,9 @@ setup(
     url='https://github.com/arjunlimat/knapsack_algorithm',
     packages=find_packages(),
     install_requires=[
- 
+        # List your package dependencies here, e.g.,
+        # 'numpy',
+        # 'pandas',
     ],
     classifiers=[
         'Programming Language :: Python :: 3',
