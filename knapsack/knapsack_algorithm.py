@@ -7,7 +7,7 @@ def knapsack(values, weights, capacity):
             raise ValueError("Capacity must be a non-negative integer.")
        
         n = len(values)  # Number of items
-        # Create a 2D DP array to store the maximum value that can be obtained using the first i items and capacity j.
+        
         dp = [[0 for _ in range(capacity + 1)] for _ in range(n + 1)]
 
         # Build the DP table in bottom-up manner
