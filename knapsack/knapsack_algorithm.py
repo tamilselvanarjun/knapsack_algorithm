@@ -1,6 +1,6 @@
 def knapsack(values, weights, capacity):
     try:
-        
+        # Check for input errors
         if len(values) != len(weights):
             raise ValueError("Length of values and weights must be the same.")
         if capacity < 0:
