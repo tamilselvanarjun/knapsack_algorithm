@@ -20,7 +20,7 @@ def knapsack(values, weights, capacity):
                     # If the current item cannot fit, do not take it.
                     dp[i][w] = dp[i-1][w]
 
-        # The answer to the problem is in dp[n][capacity], which represents considering all items with the full capacity
+       
         return dp[n][capacity]
 
     except ValueError as ve:
