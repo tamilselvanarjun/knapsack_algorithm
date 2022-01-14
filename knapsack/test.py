@@ -1,5 +1,5 @@
 import unittest
-from knapsack import knapsack
+from knapsack_algorithm import knapsack
 
 class TestKnapsack(unittest.TestCase):
     def test_valid_input(self):
@@ -8,13 +8,6 @@ class TestKnapsack(unittest.TestCase):
         capacity = 50
         result = knapsack(values, weights, capacity)
         self.assertEqual(result, 220)
-
-    def test_invalid_input_different_lengths(self):
-        values = [60, 100, 120]
-        weights = [10, 20]
-        capacity = 50
-        result = knapsack(values, weights, capacity)
-        self.assertIsNone(result)
 
     def test_invalid_input_negative_capacity(self):
         values = [60, 100, 120]
@@ -30,12 +23,26 @@ class TestKnapsack(unittest.TestCase):
         result = knapsack(values, weights, capacity)
         self.assertIsNone(result)
 
-    def test_large_input(self):
-        values = [i for i in range(1, 1001)]  # values = [1, 2, 3, ..., 1000]
-        weights = [i for i in range(1, 1001)]  # weights = [1, 2, 3, ..., 1000]
-        capacity = 500
+    def test_invalid_input_zero_capacity(self):
+        values = [60, 100, 120]
+        weights = [10, 20, 30]
+        capacity = 0
         result = knapsack(values, weights, capacity)
-        self.assertEqual(result, 125250)  # Sum of values from 1 to 500
+        self.assertEqual(result, 0)  # Knapsack capacity is zero, so result should be zero
+
+    def test_invalid_input_zero_weight(self):
+        values = [60, 100, 120]
+        weights = [0, 0, 0]
+        capacity = 50
+        result = knapsack(values, weights, capacity)
+        self.assertEqual(result, 0)  # All items have zero weight, so result should be zero
+
+    def test_valid_input_duplicate_items(self):
+        values = [60, 100, 120, 60]  # Duplicate item value
+        weights = [10, 20, 30, 10]  # Duplicate item weight
+        capacity = 50
+        result = knapsack(values, weights, capacity)
+        self.assertEqual(result, 220)  # Duplicate items should not affect the result
 
 if __name__ == '__main__':
     unittest.main()
