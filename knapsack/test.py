@@ -28,7 +28,7 @@ class TestKnapsack(unittest.TestCase):
         weights = [10, 20, 30]
         capacity = 0
         result = knapsack(values, weights, capacity)
-        self.assertEqual(result, 0)  # Knapsack capacity is zero, so result should be zero.
+        self.assertEqual(result, 0)  
 
     def test_invalid_input_zero_weight(self):
         values = [60, 100, 120]
