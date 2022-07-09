@@ -42,7 +42,7 @@ class TestKnapsack(unittest.TestCase):
         weights = [10, 20, 30, 10]  # Duplicate item weight
         capacity = 50
         result = knapsack(values, weights, capacity)
-        self.assertEqual(result, 220)  # Duplicate items should not affect the result
+        self.assertEqual(result, 220)  
 
 if __name__ == '__main__':
     unittest.main()
