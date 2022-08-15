@@ -17,7 +17,7 @@ def knapsack(values, weights, capacity):
                     # If the current item can fit in the knapsack, choose the maximum between taking the item and not taking it.
                     dp[i][w] = max(dp[i-1][w], dp[i-1][w-weights[i-1]] + values[i-1])
                 else:
-                   
+                    # If the current item cannot fit, do not take it.
                     dp[i][w] = dp[i-1][w]
 
         # The answer to the problem is in dp[n][capacity], which represents considering all items with the full capacity.
