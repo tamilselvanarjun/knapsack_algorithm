@@ -35,7 +35,7 @@ class TestKnapsack(unittest.TestCase):
         weights = [0, 0, 0]
         capacity = 50
         result = knapsack(values, weights, capacity)
-        self.assertEqual(result, 0)  # All items have zero weight, so result should be zero.
+        self.assertEqual(result, 0)  
 
     def test_valid_input_duplicate_items(self):
         values = [60, 100, 120, 60]  # Duplicate item value
