@@ -1,5 +1,5 @@
 import unittest
-from your_module_name import knapsack
+from knapsack_algorithm import knapsack
 
 class TestKnapsack(unittest.TestCase):
     def test_valid_input(self):
