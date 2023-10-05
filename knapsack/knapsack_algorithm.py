@@ -29,3 +29,11 @@ def knapsack(values, weights, capacity):
     except Exception as e:
         print(f"An unexpected error occurred: {e}")
         return None
+
+# Example usage:
+#values = [60, 100, 120]  # The values of the items
+#weights = [10, 20, 30]  # The weights of the items
+#capacity = 50  # The maximum capacity of the knapsack
+#result = knapsack(values, weights, capacity)
+#if result is not None:
+#    print(result)
