@@ -39,7 +39,7 @@ class TestKnapsack(unittest.TestCase):
 
     def test_valid_input_duplicate_items(self):
         values = [60, 100, 120, 60]  # Duplicate item value
-        weights = [10, 20, 30, 10]  
+        weights = [10, 20, 30, 10]  # Duplicate item weight
         capacity = 50
         result = knapsack(values, weights, capacity)
         self.assertEqual(result, 220)  # Duplicate items should not affect the result
