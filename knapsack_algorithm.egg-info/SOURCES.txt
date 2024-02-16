@@ -1,0 +1,6 @@
+README.md
+setup.py
+knapsack_algorithm.egg-info/PKG-INFO
+knapsack_algorithm.egg-info/SOURCES.txt
+knapsack_algorithm.egg-info/dependency_links.txt
+knapsack_algorithm.egg-info/top_level.txt
